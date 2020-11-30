@@ -4,14 +4,25 @@ body {
   font-family: "Nunito", sans-serif;
 }
 
-.navbar.scrolled {
-  background: #121212;
-  transition: background 500ms;
+@media (min-width: 768px) {
+  .scrolled {
+    background: #090909;
+    transition: background 500ms;
+    position: sticky;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+  }
 }
 
 #mainNavbar {
   font-size: 1.5rem;
   font-weight: 400;
+}
+
+h2 {
+  margin-top: 40px;
 }
 
 #mainNavbar .nav-link {
@@ -41,6 +52,10 @@ div h2 {
   font-family: "Pacifico", cursive;
 }
 
+.card {
+  min-width: 300px;
+}
+
 .card-body {
   margin: auto;
 }
@@ -50,7 +65,6 @@ div h2 {
 }
 
 .card img {
-  height: 400px;
   padding-bottom: 10px;
 }
 
